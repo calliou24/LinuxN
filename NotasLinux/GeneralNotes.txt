@@ -1,0 +1,46 @@
+Notes...
+
+if u want to know the information about a command inside the termnal => use => (man) before the command 
+  Ex:
+   man ls => it brings info about ls command
+   man sudo => it brings info about sudo command
+Also exist in the most of the command the parameter -h --help that helps
+
+Comand (sudo) it allow a user to use and execute programs as a root user emulator, 
+  this way the current user can navigate, install things and modify directories without broke nothing.
+
+apt - advance package tool - is a package manager by default on Debian
+
+snap - is also a package manager as default on Debian
+
+ls -s to see detailed information about a directories and content files 
+
+//TYPES OF PERMISSIONS 
+r - red
+w - write 
+x - execute
+
+chmod - change mod - usage => change the permisson assingned to certain group on the users
+
+Ex: [-rx] [-rx] [-rx] = this structure define the groups in the operative system 
+    WHERE
+     first position is - user => current user 
+     second position is - group 
+     thirf position is - others => this refers to all other user 
+
+Also is possible to add more of one permisson at a time using coma's like this: chmod u+x,g-r,o-e 
+ On this line we are saying that: 
+    USER CAN EXECUTE, GROUP WILL NOT LONGER READ AND THE OTHER USER WILL BE NOT ABLE TO EXECUTE
+
+Links
+ (ln) - command link = receive as parameters the ./route and a name for the link
+  Ex: ln ./Folder/this-file.txt new-file.txt 
+
+ -hard link => a hard link is basically a link where the user will be able to edit the file begin in other directory
+ 
+ -soft link => it creates with -s (symbolic) parameters  
+ 
+ /Differences/ = the hard link target the content of the file
+                  and the soft link target the file as a route - this means that if the user delete the first file 
+                    it we not be able to continue using correctly the link.
+ 
