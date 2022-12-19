@@ -43,4 +43,28 @@ Links
  /Differences/ = the hard link target the content of the file
                   and the soft link target the file as a route - this means that if the user delete the first file 
                     it we not be able to continue using correctly the link.
+
+
+ (find) - find a file 
+  [find $PATH --parameter(ex: --name) $parameter]
+
+
+ (grep) - it uses to search text string inside a file
+
+
+ (tail) - uses for filter information on the output => it reveives a parameter called -n that means number and it 
+ refers to a line 
+  Ex: tail -n 2 -> start from bottom output
+  Ex: tail -n +2 -> start from top output
+
+ (sed) - we use to replace text for other [the user can use regex to find the pattern to replace] 
+  Ex: sed "s/  */ /g" -> this will replace all the duplicated spaces and the single spaces for a single spaces
+
+   ["s///"] - this is how the user can call this expresion where 's/' is the start of the regex and the last '/' is the end of the regex, inside of this expresion is where the user insert the information that is gonna be replaced
  
+
+ ----------------------------------------------------
+ PIPES 
+ (|) - the pipe parameter is like a tub that send the information from an output to the followed command 
+
+
